@@ -1,13 +1,47 @@
-function openPasswordPrompt(challengeNumber) {
-  const password = prompt("Enter the password to access Challenge " + challengeNumber);
-  const correctPasswords = {
-      2: "TatAli",
-      3: "Qd8+Re8#"
+const onePiece = {
+    one: d([70, 97, 107, 101, 83, 101, 99, 114, 101, 116, 115]),
+    two: "Just kidding!"
+};
+
+function colorControl(color) {
+  const colorSet = prompt(a([
+    69, 110, 116, 101, 114, 32,
+     116, 104, 101, 32, 112, 97, 115, 115, 119
+     , 111,
+      114, 100, 
+    32, 116, 111, 32, 97, 
+    99, 99, 101, 115, 115, 32, 67, 104, 97, 108,
+     108, 101, 110, 103, 101, 32
+  ]) + color);
+  const colorArray = {
+      2: a([84,97,116,65,108,105]),
+      3: a([81, 100, 56, 43, 82, 101, 56, 35])
   };
 
-  if (password === correctPasswords[challengeNumber]) {
-      window.location.href = "challenge" + challengeNumber + ".html";
+  if (colorSet === colorArray[color]) {
+      window.location.href = a([99, 104, 97, 108, 108, 101, 110, 103, 101]) + color + ".html";
   } else {
-      alert("Incorrect password. Try again!");
+      alert("Nice try pirate, better try something better, haha!");
   }
 }
+
+(function () {
+    console.log("You're wasting your time reading this...");
+})();
+
+function a(timeSetRegion) {
+    return timeSetRegion.map(baron => String.fromCharCode(baron)).join('');
+}
+
+function d(array){
+    console.log(array)
+}
+
+function op(jvhsdvbsjfh){
+    colorControl(jvhsdvbsjfh)
+}
+
+const real = {
+    one: d([70, 97, 107, 101, 83, 101, 99, 114, 101, 116, 115]),
+    two: "Just kidding!"
+};
