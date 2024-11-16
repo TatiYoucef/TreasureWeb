@@ -19,9 +19,23 @@ function colorControl(color) {
   };
 
   if (colorSet === colorArray[color]) {
-      window.location.href = a([99, 104, 97, 108, 108, 101, 110, 103, 101]) + color + ".html";
+      window.location.href = a([99, 104, 97,
+         108, 108, 101, 110, 103,
+          101]) + color + a([46, 104,
+         116, 109, 108]);
   } else {
-      alert("Nice try pirate, better try something better, haha!");
+      alert(a([78, 105, 99, 101, 32, 116, 114, 121, 32, 112, 105, 114,
+         97, 116, 101, 44, 
+        32, 98, 101, 116, 116, 101, 114, 32, 116, 114, 121, 
+        32, 115, 111,
+         109, 
+        101, 116, 104, 
+        105, 110, 103, 32, 98, 101,
+         116, 116, 101, 
+         114, 44, 32, 
+
+        104, 97, 104, 97, 33
+      ]));
   }
 }
 
