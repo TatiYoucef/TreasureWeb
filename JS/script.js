@@ -3,6 +3,24 @@ const onePiece = {
     two: "Just kidding!"
 };
 
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) { // F12 or Ctrl+Shift+I
+        e.preventDefault();
+    }
+});
+
+(function() {
+    var blockedConsole = ['log', 'debug', 'info', 'warn', 'error', 'assert'];
+    blockedConsole.forEach(function(method) {
+        console[method] = function() {
+        };
+    });
+})();
+
 function colorControl(color) {
   const colorSet = prompt(a([
     69, 110, 116, 101, 114, 32,
