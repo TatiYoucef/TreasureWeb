@@ -42,7 +42,7 @@ function colorControl(color) {
         if(color != 2)window.location.href = a([99, 104, 97,
          108, 108, 101, 110, 103,
           101]) + color + a([46, 104,
-         116, 109, 108]); else window.location.href = "https://tatiyoucef.github.io/CryptoWeb/"; 
+         116, 109, 108]); else window.location.href = "https://tatiyoucef.github.io/CryptoWeb/index.html"; 
   } else {
       alert(a([78, 105, 99, 101, 32, 116, 114, 121, 32, 112, 105, 114,
          97, 116, 101, 44, 
