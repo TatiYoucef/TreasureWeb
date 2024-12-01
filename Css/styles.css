@@ -42,6 +42,7 @@ p {
 
 button {
   padding: 10px 20px;
+  margin: 10px; 
   background-color: #f4c542;
   color: #1d2b4f;
   border: none;
